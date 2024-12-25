@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<group>
+
+    <item
+        android:checkable="true"
+        android:checked="true"
+        android:id="@+id/birleisk_nav_graph"
+        android:title="1"
+        android:icon="@drawable/baseline_home_24"
+        app:showAsAction="always"
+        android:menuCategory="secondary"
+        />
+
+    <item
+        android:checkable="true"
+        android:checked="true"
+        android:id="@+id/b"
+        android:title="2"
+        android:icon="@drawable/baseline_settings_24"
+        app:showAsAction="always"
+        android:menuCategory="secondary"
+        />
+
+    <item
+        android:checkable="true"
+        android:checked="true"
+        android:id="@+id/c"
+        android:title="3"
+        android:icon="@drawable/baseline_slideshow_24"
+        app:showAsAction="always"
+        android:menuCategory="secondary"
+        />
+
+    <item
+        android:checkable="true"
+        android:checked="true"
+        android:id="@+id/d"
+        android:title="4"
+        android:icon="@drawable/baseline_register_24"
+        app:showAsAction="always"
+        android:menuCategory="secondary"
+        />
+
+</group>
+
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group>
+
+    <item
+        android:id="@+id/home"
+        android:title="home"
+        android:icon="@drawable/baseline_home_24"
+        android:menuCategory="secondary"
+        />
+
+    <item
+        android:id="@+id/fragmentBir"
+        android:title="fragment 1"
+        android:icon="@drawable/baseline_home_24"
+        android:menuCategory="secondary"
+        />
+
+
+    <item
+        android:id="@+id/fragmentIki"
+        android:title="fragment 2"
+        android:icon="@drawable/baseline_home_24"
+        android:menuCategory="secondary"
+        />
+
+
+</group>
+
+</menu>

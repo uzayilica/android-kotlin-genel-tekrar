@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/birleisk_nav_graph"
+    app:startDestination="@id/a">
+
+    <fragment
+        android:id="@+id/a"
+        android:name="com.example.android.fragmentler.A"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_a_to_a1"
+            app:destination="@id/a1" />
+    </fragment>
+    <fragment
+        android:id="@+id/a1"
+        android:name="com.example.android.fragmentler.A1"
+        android:label="fragment_a1"
+        tools:layout="@layout/fragment_a1" >
+        <action
+            android:id="@+id/action_a1_to_a2"
+            app:destination="@id/a2" />
+    </fragment>
+    <fragment
+        android:id="@+id/a3"
+        android:name="com.example.android.fragmentler.A3"
+        android:label="fragment_a3"
+        tools:layout="@layout/fragment_a3" >
+        <argument
+            android:name="sayi"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/a2"
+        android:name="com.example.android.fragmentler.A2"
+        android:label="fragment_a2"
+        tools:layout="@layout/fragment_a2" >
+        <action
+            android:id="@+id/action_a2_to_a3"
+            app:destination="@id/a3" />
+        <argument android:name="sayi"
+            app:argType="integer" />
+    </fragment>
+</navigation>

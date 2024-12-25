@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentBir">
+
+    <fragment
+        android:id="@+id/fragmentBir"
+        android:name="com.example.android.fragmentler.FragmentBir"
+        android:label="fragment_bir"
+        tools:layout="@layout/fragment_bir" >
+        <action
+            android:id="@+id/action_fragmentBir_to_fragmentIki"
+            app:destination="@id/fragmentIki" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentIki"
+        android:name="com.example.android.fragmentler.FragmentIki"
+        android:label="fragment_iki"
+        tools:layout="@layout/fragment_iki" >
+        <argument
+            android:name="sayi"
+            app:argType="integer" />
+    </fragment>
+</navigation>

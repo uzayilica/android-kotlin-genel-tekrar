@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:strokeColor="@color/black"
+    app:strokeWidth="1dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="25dp"
+    android:elevation="0dp"
+    tools:context=".fragmentler.FragmentBir">
+
+
+    <LinearLayout
+        android:background="#EDE56C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/tr"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Fragment 1"
+            android:textAlignment="center"
+            />
+
+        <Button
+
+            android:backgroundTint="#F44336"
+            android:text="Fragment Değiştir"
+            android:id="@+id/btnDegistir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="400dp"
+            android:layout_height="270dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kod"
+
+             />
+
+
+        <EditText
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/baseline_login_24"
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Username" />
+
+
+
+
+        <EditText
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent Değiştir"
+            android:layout_gravity="center"
+            android:id="@+id/btnIntentDegistir"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigation Değiştir"
+            android:layout_gravity="center"
+            android:id="@+id/btnNavigationDegistir"
+            />
+
+    </LinearLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

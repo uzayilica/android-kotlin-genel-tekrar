@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SonActivity">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageViewResim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Id"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewResim"
+        app:layout_constraintStart_toStartOf="@+id/imageViewResim"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewResim" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/editTextId"
+        app:layout_constraintStart_toStartOf="@+id/editTextId"
+        app:layout_constraintTop_toBottomOf="@+id/editTextId" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="City"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextYas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Yas"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCity"
+        app:layout_constraintStart_toStartOf="@+id/editTextCity"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCity" />
+
+    <Button
+        android:id="@+id/buttonEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:text="Ekle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYas" />
+
+    <Button
+        android:id="@+id/buttonSil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sil"
+        app:layout_constraintStart_toEndOf="@+id/buttonEkle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYas" />
+
+
+    <Button
+        android:id="@+id/buttonYenile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sil"
+        app:layout_constraintStart_toEndOf="@+id/buttonEkle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYas" />
+
+    <Button
+        android:id="@+id/buttonGoruntule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Görüntüle"
+        app:layout_constraintStart_toEndOf="@+id/buttonYenile"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYas" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerViewUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="469dp"
+        android:layout_height="359dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
